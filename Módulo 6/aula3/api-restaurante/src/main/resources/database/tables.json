@@ -1,0 +1,60 @@
+[ {
+  "id" : 0,
+  "orders" : [ {
+    "id" : 0,
+    "tableId" : 0,
+    "orderItems" : [ {
+      "id" : 12,
+      "description" : "BOB Fritas",
+      "price" : 4.99,
+      "quantity" : 2,
+      "orderId" : 0
+    }, {
+      "id" : 13,
+      "description" : "Coca-Cola",
+      "price" : 2.99,
+      "quantity" : 2,
+      "orderId" : 0
+    } ],
+    "totalAmount" : 15.96
+  }, {
+    "id" : 1,
+    "tableId" : 0,
+    "orderItems" : [ {
+      "id" : 2,
+      "description" : "Pizza de chocolate branco",
+      "price" : 24.99,
+      "quantity" : 1,
+      "orderId" : 1
+    }, {
+      "id" : 3,
+      "description" : "Pepsi",
+      "price" : 2.49,
+      "quantity" : 1,
+      "orderId" : 1
+    } ],
+    "totalAmount" : 27.48
+  } ],
+  "totalAmount" : 43.44
+}, {
+  "id" : 1,
+  "orders" : [ {
+    "id" : 2,
+    "tableId" : 0,
+    "orderItems" : [ {
+      "id" : 4,
+      "description" : "Salada de Frutas",
+      "price" : 9.99,
+      "quantity" : 2,
+      "orderId" : 2
+    }, {
+      "id" : 5,
+      "description" : "Suco de Uva",
+      "price" : 7.99,
+      "quantity" : 1,
+      "orderId" : 2
+    } ],
+    "totalAmount" : 27.97
+  } ],
+  "totalAmount" : 27.97
+} ]

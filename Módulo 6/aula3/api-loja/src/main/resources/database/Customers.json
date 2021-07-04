@@ -1,0 +1,91 @@
+[ {
+  "id" : 0,
+  "name" : "André",
+  "cpf" : "073459",
+  "email" : "andre.ddias@meli.com",
+  "telefone" : "99233",
+  "orders" : [ {
+    "id" : 0,
+    "totalValue" : 1119.00,
+    "orderItems" : [ {
+      "id" : 0,
+      "description" : "Suporte Macbook",
+      "quantity" : 1,
+      "color" : "Metálico",
+      "price" : 120.00,
+      "orderId" : 0
+    }, {
+      "id" : 1,
+      "description" : "Webcam Logitech",
+      "quantity" : 1,
+      "color" : "Preta",
+      "price" : 999.00,
+      "orderId" : 0
+    } ],
+    "customerId" : 0
+  }, {
+    "id" : 1,
+    "totalValue" : 698.00,
+    "orderItems" : [ {
+      "id" : 2,
+      "description" : "Estante de Livros",
+      "quantity" : 1,
+      "color" : "Madeira",
+      "price" : 299.00,
+      "orderId" : 1
+    }, {
+      "id" : 3,
+      "description" : "Mesa de escritório",
+      "quantity" : 1,
+      "color" : "Preta",
+      "price" : 399.00,
+      "orderId" : 1
+    } ],
+    "customerId" : 0
+  }, {
+    "id" : 3,
+    "totalValue" : 698.00,
+    "orderItems" : [ {
+      "id" : 8,
+      "description" : "Banquinho de Madeira",
+      "quantity" : 1,
+      "color" : "Madeira",
+      "price" : 299.00,
+      "orderId" : 3
+    }, {
+      "id" : 9,
+      "description" : "Mesa de Jantar",
+      "quantity" : 1,
+      "color" : "Preta",
+      "price" : 399.00,
+      "orderId" : 3
+    } ],
+    "customerId" : 0
+  } ]
+}, {
+  "id" : 1,
+  "name" : "Eduardo",
+  "cpf" : "657008",
+  "email" : "andre.ddias@gmail.com",
+  "telefone" : "32662",
+  "orders" : [ {
+    "id" : 2,
+    "totalValue" : 307.00,
+    "orderItems" : [ {
+      "id" : 4,
+      "description" : "Copo Térmico",
+      "quantity" : 2,
+      "color" : "Branco",
+      "price" : 79.00,
+      "orderId" : 2
+    }, {
+      "id" : 5,
+      "description" : "Cafeteira",
+      "quantity" : 1,
+      "color" : "Preta",
+      "price" : 149.00,
+      "orderId" : 2
+    } ],
+    "customerId" : 1
+  } ]
+} ]
