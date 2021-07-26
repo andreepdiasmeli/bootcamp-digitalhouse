@@ -4,19 +4,20 @@
     "id" : 0,
     "tableId" : 0,
     "orderItems" : [ {
-      "id" : 12,
-      "description" : "BOB Fritas",
+      "id" : 0,
+      "description" : "Batata Frita",
       "price" : 4.99,
       "quantity" : 2,
       "orderId" : 0
     }, {
-      "id" : 13,
+      "id" : 1,
       "description" : "Coca-Cola",
       "price" : 2.99,
       "quantity" : 2,
       "orderId" : 0
     } ],
-    "totalAmount" : 15.96
+    "totalAmount" : 15.96,
+    "createdAt" : [ 2021, 7, 26, 11, 59, 43, 935065000 ]
   }, {
     "id" : 1,
     "tableId" : 0,
@@ -33,7 +34,8 @@
       "quantity" : 1,
       "orderId" : 1
     } ],
-    "totalAmount" : 27.48
+    "totalAmount" : 27.48,
+    "createdAt" : [ 2021, 7, 26, 11, 59, 43, 935089000 ]
   } ],
   "totalAmount" : 43.44
 }, {
@@ -54,7 +56,8 @@
       "quantity" : 1,
       "orderId" : 2
     } ],
-    "totalAmount" : 27.97
+    "totalAmount" : 27.97,
+    "createdAt" : [ 2021, 7, 26, 11, 59, 43, 935095000 ]
   } ],
   "totalAmount" : 27.97
 } ]

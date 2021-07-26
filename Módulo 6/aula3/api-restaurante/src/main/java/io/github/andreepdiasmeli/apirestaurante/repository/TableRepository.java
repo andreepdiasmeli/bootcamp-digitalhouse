@@ -2,6 +2,7 @@ package io.github.andreepdiasmeli.apirestaurante.repository;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import io.github.andreepdiasmeli.apirestaurante.entity.Order;
 import io.github.andreepdiasmeli.apirestaurante.entity.OrderItem;
 import io.github.andreepdiasmeli.apirestaurante.entity.Table;
@@ -11,6 +12,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,6 +25,7 @@ public class TableRepository  {
     public List<Table> loadTables(){
         List<Table> tables = null;
         ObjectMapper mapper = new ObjectMapper();
+        mapper.registerModule(new JavaTimeModule());
         try {
             File file = new File("src/main/resources/database/tables.json");
             tables = Arrays.asList(mapper.readValue(file, Table[].class));
@@ -38,12 +41,15 @@ public class TableRepository  {
         } catch (Exception e) {
             throw new RuntimeException("Falha ao abrir o arquivo tables.json .");
         }
+
+        tables = new ArrayList<>(tables);
         return tables;
     }
 
     public void saveTables(List<Table> tables){
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+        objectMapper.registerModule(new JavaTimeModule());
 
         try {
             String path = "src/main/resources/database/tables.json";

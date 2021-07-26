@@ -3,6 +3,7 @@ package io.github.andreepdiasmeli.apirestaurante.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +17,8 @@ public class Order {
     private List<OrderItem> orderItems = new ArrayList<>();
     private BigDecimal totalAmount = BigDecimal.ZERO;
     private static long autoIncrementId = 0;
+    //@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm a z")
+    private LocalDateTime createdAt = LocalDateTime.now();
 
     public Order() {}
 
@@ -63,6 +66,10 @@ public class Order {
 
     public Table getTable() {
         return table;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
     }
 
     public void setTable(Table table) {
